@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg1"
+    tools:context=".Main3Activity">
+
+    <Button
+        android:id="@+id/activity3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="377dp"
+        android:background="#F5F5DC"
+        android:onClick="activity3Click"
+        android:text="Activity1"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_unbind3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentBottom="true"
+        android:layout_marginRight="85dp"
+        android:layout_marginBottom="80dp"
+        android:background="#F5F5DC"
+        android:onClick="unbindClick3"
+        android:text="解绑服务"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_call3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_unbind3"
+        android:layout_alignLeft="@id/btn_unbind3"
+        android:layout_marginBottom="55dp"
+        android:background="#F5F5DC"
+        android:onClick="callClick3"
+        android:padding="10dp"
+        android:text="调用服务中的方法"
+        android:textSize="16sp" />
+
+    <Button
+        android:id="@+id/btn_bind3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/btn_call3"
+        android:layout_alignLeft="@id/btn_call3"
+        android:layout_marginBottom="50dp"
+        android:background="#F5F5DC"
+        android:onClick="bindClick3"
+        android:text="绑定服务"
+        android:textSize="16sp" />
+</RelativeLayout>
